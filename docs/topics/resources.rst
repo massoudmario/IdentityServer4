@@ -86,7 +86,7 @@ To get access tokens for APIs, you also need to register them as a scope. This t
                     new Secret("secret".Sha256())
                 },
 
-                // include the following using claims in access token (in addition to subject id)
+                // include the following user claims in access token (in addition to subject id)
                 UserClaims = { JwtClaimTypes.Name, JwtClaimTypes.Email },
 
                 // this API defines two scopes
